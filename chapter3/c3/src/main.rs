@@ -1,12 +1,13 @@
 fn main() {
     println!("Hello World!!");
 
-    let condition = false;
-    let number = if condition {
-        5
-    }else {
-        6
-    };
+    let mut number = 3;
 
-    println!("The value of number is: {}", number)
+    while number != 0 {
+        println!("{}!", number);
+
+        number = number - 1;
+    }
+
+    println!("Lift off!!!")
 }
